@@ -49,8 +49,6 @@ const answer =
 
 const LetterRow = ({ rounds, checkAnswer, guess }: LetterRowProps) => {
   const letter = rounds.split("");
-  console.log(checkAnswer)
-
   const bgColor = (index: number) => {
     if (checkAnswer[guess]) {
       if (letter[index] === answer[index]) {
